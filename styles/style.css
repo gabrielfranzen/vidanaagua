@@ -4,6 +4,7 @@
     --secondary-color: white;
 }
 
+/* BANNER */
 
 header{
     position: relative;
@@ -15,31 +16,22 @@ header{
     padding-bottom: 150px;
     background-color: var(--primary-color);
 }
-
 header section{
     margin: auto;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
     max-width: 900px;
     padding: 40px;
     box-sizing: border-box;
 }
-
 header #odslogo{
     margin: auto;
     width: 40%;
     max-width: 300px;
     min-width: 240px;
 }
-
 header #odslogo img{
     width: 100%;
     border: 1px solid var(--secondary-color);
 }
-
-
 header > h1{
     font-size: clamp(30px,2.4vw,2.4vw);
     color: var(--secondary-color);
@@ -49,13 +41,11 @@ header > h1{
     margin-bottom: calc(5vh - 30px);
     padding: 0px 20px;
 }
-
 header section h1{
     font-size: clamp(20px,1.4vw,1.4vw);
     color: var(--secondary-color);
     text-align: left;
 }
-
 #titles{
     margin: auto;
     max-width: 340px;
@@ -64,8 +54,6 @@ header section h1{
     display: flex;
     flex-direction: column;
 }
-
-
 .odstitle{
     font-size: 40px;
     text-align: center;
@@ -84,36 +72,93 @@ header section h1{
     color: var(--secondary-color);
 }
 
+
+
+/* CONTEÚDO */
+
 main{
-    padding: 12vh 0 20vh 0;
     background-color: var(--secondary-color);
 }
 .container{
     margin: auto;
-    max-width: 900px;
+    max-width: 1100px;
     padding: 10px 0px;
 }
+section{
+    padding: 50px 20px;
+}
+
+
+/* INTRODUÇÃO */
+
+.introducao{
+    justify-content: center;
+    align-items: center;
+}
+.introducao div:first-child{
+    /* flex-grow ; flex-shrink */
+    flex: 70%;
+    padding: 15px;
+}
+#mapa-oceanos{
+    flex: 30%;
+    padding: 15px;
+    margin: auto;
+    max-width: 340px;
+}
+#mapa-oceanos img{
+    width: 100%;
+}
+
+
+/* IMAGEM POLUIÇÃO */
+
+#imagem-poluida{
+    max-width: 1000px;
+    margin: auto;
+}
+#imagem-poluida img{
+    border-radius: 16px;
+    width: 100%;
+}
+#imagem-poluida h4{
+    margin: 6px;
+}
+#imagem-poluida a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+#imagem-poluida a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+/* VÍDEO */
+
 #videotitle{
     text-align: center;
     color: var(--primary-color);
     font-size: 40px;
 }
 .video{
-    padding: 26px 10px;
+    padding: 26px 0px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .video iframe{
-    width: 95%;
+    width: 100%;
     aspect-ratio: 16/9;
-    border: 4px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
     border-radius: 12px;
     transition: all 0.4s;
-    max-width: 780px;
+    max-width: 1000px;
 }
 .video iframe:hover{
-    border: 4px solid rgb(0, 60, 226);
-    transform: scale(1.02);
+    border: 3px solid rgb(255, 0, 0);
 }
+
+
+
+

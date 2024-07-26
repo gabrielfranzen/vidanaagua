@@ -17,18 +17,18 @@
     <link rel="stylesheet" href="styles/fonts.css">
 
     <!-- RESPONSIVIDADE-->
-    <link rel="stylesheet" media="(min-width:800px)" href="styles/desktop.css">
+    <link rel="stylesheet" media="(min-width:840px)" href="styles/desktop.css">
 </head>
 <body>
     <header>
-        <section>
+        <section class="row">
+            <div id="odslogo">
+                <img src="images/ods14.png" alt="Logo ODS 14, Vida na água">
+            </div>
             <div id="titles">
                 <h1 class="roboto-medium odstitle">Vida na Água</h1>
                 <h1 class="roboto-regular odsnumber">Objetivo de Desenvolvimento Sustentável</h1>
                 <h2 class="roboto-thin odsdescription">Conservar e promover o uso sustentável dos oceanos, dos mares e dos recursos marinhos para o desenvolvimento sustentável</h2>
-            </div>
-            <div id="odslogo">
-                <img src="images/ods14.png" alt="Logo ODS 14, Vida na água">
             </div>
         </section>
         <div class="wave wave1"></div>
@@ -39,10 +39,38 @@
     
     <main>
         <div class="container">
-            <h1 class="roboto-medium" id="videotitle">IBGE explica</h1>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/-Qy6HtE0GZU?si=xHZictkA1ReZ1Osz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+            <section class="introducao row">
+                <div>
+                    <h1 class="roboto-medium introducao">Introdução</h1>
+                    <p class="roboto-regular">
+                        Os oceanos tornam a vida humana possível por meio da provisão de segurança alimentar, transporte, fornecimento de energia, turismo, dentre outros. Além, por meio da regulação da sua temperatura, química, correntes e formas de vida, os oceanos regulam muitos dos dos serviços ecossistêmicos mais críticos do planeta, como ciclo do carbono e nitrogênio, regulação do clima, e produção de oxigênio. Além, os oceanos representam aproximadamente US$ 3 trilhões da economia global por ano, ou 5% do PIB global. 
+                    </p>
+                    <p class="roboto-regular">
+                        40% dos oceanos estão sendo afetados incisiva e diretamente por atividades humanas, como poluição e pesca predatória, o que resulta, principalmente, em perda de habitat, introdução de espécies invasoras e acidificação. Nosso lixo também ajuda na degradação dos oceanos – há 13.000 pedaços de lixo plástico em cada quilômetro quadrado. É frente a esses desafios que os Objetivos de Desenvolvimento Sustentável indicam metas para gerenciar e proteger a vida na água.
+                    </p>
+                </div>
+                <div id="mapa-oceanos">
+                    <img src="images/World_ocean_map.gif" alt="">
+                </div>
+            </section>
+            <section>
+                <h1 class="roboto-medium" id="videotitle">IBGE explica</h1>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/-Qy6HtE0GZU?si=xHZictkA1ReZ1Osz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section id="imagem-poluida">
+                <img src="images/mar-poluido.jpg" alt="">
+                <div class="row">
+                    <h4 class="roboto-regular">Direitos autorais: Michael Pitts</h4>
+                    <h4 class="roboto-regular">Veja mais em: 
+                        <a href="https://revistaplaneta.com.br/mar-de-plastico-2/">revista planeta</a>
+                    </h4>
+                </div>
+            </section>
+            <section>
+                
+            </section>
         </div>
     </main>
 </body>
