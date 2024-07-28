@@ -89,7 +89,7 @@ main{
     padding: 10px 0px;
 }
 section{
-    padding: 50px 10px;
+    padding: 60px 10px;
 }
 
 
@@ -122,7 +122,7 @@ section{
     padding: 20px;
 }
 #imagem-poluida img{
-    border-radius: 16px;
+    border-radius: 8px;
     width: 100%;
 }
 #imagem-poluida h4{
@@ -168,6 +168,7 @@ section{
 
 #metas h1{
     margin-bottom: 30px;
+    text-align: center;
 }
 #metas p{
     margin: 0;
@@ -175,8 +176,12 @@ section{
     border: 1px solid gray;
     border-bottom: 0;
 }
-#metas p:last-child{
+#metas p:first-of-type{
+    border-radius: 8px 8px 0px 0px;
+}
+#metas p:last-of-type{
     border-bottom: 1px solid gray;
+    border-radius: 0px 0px 8px 8px;
 }
 .meta-num {
     font-weight: bold;
