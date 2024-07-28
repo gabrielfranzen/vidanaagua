@@ -9,12 +9,12 @@ header{
     flex-direction: unset;
     align-items: unset;
     justify-content: unset;
-    padding-bottom: 300px;
+    padding-top: 100px;
+    padding-bottom: 200px;
     background-color: var(--primary-color);
 }
 header section{
     justify-content: space-around;
-    margin-top: 12vh;
 }
 
 header #odslogo{

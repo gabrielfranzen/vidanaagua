@@ -89,7 +89,7 @@ main{
     padding: 10px 0px;
 }
 section{
-    padding: 50px 20px;
+    padding: 50px 10px;
 }
 
 
@@ -119,6 +119,7 @@ section{
 
 #imagem-poluida{
     margin: auto;
+    padding: 20px;
 }
 #imagem-poluida img{
     border-radius: 16px;
