@@ -4,16 +4,20 @@
     --secondary-color: white;
 }
 
+
+h1 {
+    color: var(--primary-color);
+}
+
 /* BANNER */
 
 header{
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 90vh;
     box-sizing: border-box;
-    padding: 5vh 0;
-    padding-bottom: 150px;
+    padding-bottom: 120px;
+    padding-top: 50px;
     background-color: var(--primary-color);
 }
 header section{
@@ -81,7 +85,7 @@ main{
 }
 .container{
     margin: auto;
-    max-width: 1100px;
+    max-width: 950px;
     padding: 10px 0px;
 }
 section{
@@ -100,13 +104,13 @@ section{
     flex: 70%;
     padding: 15px;
 }
-#mapa-oceanos{
+.image-container{
     flex: 30%;
     padding: 15px;
     margin: auto;
     max-width: 340px;
 }
-#mapa-oceanos img{
+.image-container img{
     width: 100%;
 }
 
@@ -114,7 +118,6 @@ section{
 /* IMAGEM POLUIÇÃO */
 
 #imagem-poluida{
-    max-width: 1000px;
     margin: auto;
 }
 #imagem-poluida img{
@@ -150,15 +153,43 @@ section{
 .video iframe{
     width: 100%;
     aspect-ratio: 16/9;
-    border: 3px solid var(--primary-color);
+    border: 2px solid var(--primary-color);
     border-radius: 12px;
     transition: all 0.4s;
-    max-width: 1000px;
 }
 .video iframe:hover{
-    border: 3px solid rgb(255, 0, 0);
+    border: 2px solid rgb(4, 0, 255);
 }
 
 
 
+/* METAS */
 
+#metas h1{
+    margin-bottom: 30px;
+}
+#metas p{
+    margin: 0;
+    padding: 20px 15px;
+    border: 1px solid gray;
+    border-bottom: 0;
+}
+#metas p:last-child{
+    border-bottom: 1px solid gray;
+}
+.meta-num {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+
+/* FOOTER */
+footer{
+    text-align: center;
+    padding: 50px 15px;
+}
+footer h3, footer h4{
+    margin: 0;
+    padding: 4px;
+}

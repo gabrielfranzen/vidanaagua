@@ -6,10 +6,10 @@ header .wave{
 
 header{
     display: block;
-    min-height: 100vh;
     flex-direction: unset;
     align-items: unset;
     justify-content: unset;
+    padding-bottom: 300px;
     background-color: var(--primary-color);
 }
 header section{
