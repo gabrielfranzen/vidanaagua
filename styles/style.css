@@ -160,6 +160,7 @@ section{
 }
 .video iframe:hover{
     border: 2px solid rgb(4, 0, 255);
+    transform: scale(1.005);
 }
 
 
@@ -187,6 +188,22 @@ section{
     font-weight: bold;
     font-size: 20px;
     color: var(--primary-color);
+}
+
+
+/* ODS */
+
+.ods h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.ods img{
+    width: 100%;
+    transition: all 0.4s;
+}
+.ods img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 
