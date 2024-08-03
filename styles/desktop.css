@@ -51,3 +51,52 @@ header #odslogo{
     display: flex;
     flex-direction: row;
 }
+
+
+/* METAS */
+#imagens-metas{
+    margin: unset;
+    padding: 0px;
+}
+#metas-content{
+    padding-left: 20px;
+}
+#metas-content{
+    width: 60%;
+}
+#metas{
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* IMAGEM METAS */
+.mobile-hide{
+    display: block;
+}
+
+#imagens-metas{
+    width: 30%;
+}
+
+
+/* VIDEO-ODS */
+.video-ods{
+    flex-direction: row-reverse;
+    margin: auto;
+}
+
+/* VÍDEO */
+.video-container{
+    width: 50%;
+    margin: unset;
+    padding: 0px 20px;
+}
+
+
+/* ODS */
+.ods{
+    width: 50%;
+    padding: 20px;
+}

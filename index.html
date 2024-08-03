@@ -20,7 +20,13 @@
     <link rel="stylesheet" href="styles/fonts.css">
 
     <!-- RESPONSIVIDADE-->
-    <link rel="stylesheet" media="(min-width:840px)" href="styles/desktop.css">
+    <link rel="stylesheet" media="(min-width:1000px)" href="styles/desktop.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -40,8 +46,8 @@
         <div class="wave wave4"></div>
     </header>
     
-    <div class="container">
-        <main>
+    <main>
+        <div class="container">
             <section class="introducao row">
                 <div>
                     <h1 class="roboto-medium introducao">INTRODUÇÃO</h1>
@@ -56,66 +62,103 @@
                     <img src="images/World_ocean_map.gif" alt="">
                 </div>
             </section>
-            <section id="imagem-poluida">
-                <img src="images/mar-poluido.jpg" alt="">
-                <div class="row">
-                    <h4 class="roboto-regular">Direitos autorais: © Michael Pitts</h4>
-                    <h4 class="roboto-regular">Veja mais em: 
-                        <a href="https://revistaplaneta.com.br/mar-de-plastico-2/" target="_blank">revista planeta</a>
-                    </h4>
-                </div>
-            </section>
-            <section id="metas">
-                <h1 class="roboto-medium">METAS DO OBJETIVO 14</h1>
+        </div>
+        <section class="backgroundfixed" id="tartaruga-img">
+        </section>
 
-                <p class="roboto-regular">
-                    <span class="meta-num">14.1</span> Até 2025, prevenir e reduzir significativamente a poluição marinha de todos os tipos, especialmente a advinda de atividades terrestres, incluindo detritos marinhos e a poluição por nutrientes
-                </p>
-                <p class="roboto-regular">
-                    <span class="meta-num">14.2</span> Até 2020, gerir de forma sustentável e proteger os ecossistemas marinhos e costeiros para evitar impactos adversos significativos, inclusive por meio do reforço da sua capacidade de resiliência, e tomar medidas para a sua restauração, a fim de assegurar oceanos saudáveis e produtivos
-                </p>
-                <p class="roboto-regular">
-                    <span class="meta-num">14.3</span> Minimizar e enfrentar os impactos da acidificação dos oceanos, inclusive por meio do reforço da cooperação científica em todos os níveis
-                </p>
-                <p class="roboto-regular">
-                    <span class="meta-num">14.4</span> Até 2020, efetivamente regular a coleta, e acabar com a sobrepesca, ilegal, não reportada e não regulamentada e as práticas de pesca destrutivas, e implementar planos de gestão com base científica, para restaurar populações de peixes no menor tempo possível, pelo menos a níveis que possam produzir rendimento máximo sustentável, como determinado por suas características biológicas
-                </p>
-                <p class="roboto-regular">
-                    <span class="meta-num">14.5</span> Até 2020, conservar pelo menos 10% das zonas costeiras e marinhas, de acordo com a legislação nacional e internacional, e com base na melhor informação científica disponível
-                </p>
-                <p class="roboto-regular">
-                    <span class="meta-num">14.6</span> Até 2020, proibir certas formas de subsídios à pesca, que contribuem para a sobrecapacidade e a sobrepesca, e eliminar os subsídios que contribuam para a pesca ilegal, não reportada e não regulamentada, e abster-se de introduzir novos subsídios como estes, reconhecendo que o tratamento especial e diferenciado adequado e eficaz para os países em desenvolvimento e os países de menor desenvolvimento relativo deve ser parte integrante da negociação sobre subsídios à pesca da Organização Mundial do Comércio
-                </p>
-                <p class="roboto-regular">
-                    <span class="meta-num">14.7</span> Até 2030, aumentar os benefícios econômicos para os pequenos Estados insulares em desenvolvimento e os países de menor desenvolvimento relativo, a partir do uso sustentável dos recursos marinhos, inclusive por meio de uma gestão sustentável da pesca, aquicultura e turismo
-                </p>
-                <p class="roboto-regular">
-                    <span class="meta-num">14.a</span> Aumentar o conhecimento científico, desenvolver capacidades de pesquisa e transferir tecnologia marinha, tendo em conta os critérios e orientações sobre a Transferência de Tecnologia Marinha da Comissão Oceanográfica Intergovernamental, a fim de melhorar a saúde dos oceanos e aumentar a contribuição da biodiversidade marinha para o desenvolvimento dos países em desenvolvimento, em particular os pequenos Estados insulares em desenvolvimento e os países de menor desenvolvimento relativo
-                </p>
-                <p class="roboto-regular">
-                    <span class="meta-num">14.b</span> Proporcionar o acesso dos pescadores artesanais de pequena escala aos recursos marinhos e mercados
-                </p>
-                <p class="roboto-regular">
-                    <span class="meta-num">14.c</span> Assegurar a conservação e o uso sustentável dos oceanos e seus recursos pela implementação do direito internacional, como refletido na Convenção das Nações Unidas sobre o Direito do Mar,, que provê o arcabouço legal para a conservação e utilização sustentável dos oceanos e dos seus recursos, conforme registrado no parágrafo 158 do “Futuro Que Queremos”
-                </p>
+        <div class="container">   
+            <section id="metas" class="row"> 
+                <div id="metas-content">
+                    <h1 class="roboto-medium">METAS DO OBJETIVO 14</h1>
+
+                    <p class="roboto-regular">
+                        <span class="meta-num">14.1</span> Até 2025, prevenir e reduzir significativamente a poluição marinha de todos os tipos, especialmente a advinda de atividades terrestres, incluindo detritos marinhos e a poluição por nutrientes
+                    </p>
+                    <p class="roboto-regular">
+                        <span class="meta-num">14.2</span> Até 2020, gerir de forma sustentável e proteger os ecossistemas marinhos e costeiros para evitar impactos adversos significativos, inclusive por meio do reforço da sua capacidade de resiliência, e tomar medidas para a sua restauração, a fim de assegurar oceanos saudáveis e produtivos
+                    </p>
+                    <p class="roboto-regular">
+                        <span class="meta-num">14.3</span> Minimizar e enfrentar os impactos da acidificação dos oceanos, inclusive por meio do reforço da cooperação científica em todos os níveis
+                    </p>
+                    <p class="roboto-regular">
+                        <span class="meta-num">14.4</span> Até 2020, efetivamente regular a coleta, e acabar com a sobrepesca, ilegal, não reportada e não regulamentada e as práticas de pesca destrutivas, e implementar planos de gestão com base científica, para restaurar populações de peixes no menor tempo possível, pelo menos a níveis que possam produzir rendimento máximo sustentável, como determinado por suas características biológicas
+                    </p>
+                    <p class="roboto-regular">
+                        <span class="meta-num">14.5</span> Até 2020, conservar pelo menos 10% das zonas costeiras e marinhas, de acordo com a legislação nacional e internacional, e com base na melhor informação científica disponível
+                    </p>
+                    <div class="grow">
+                        <p class="roboto-regular">
+                            <span class="meta-num">14.6</span> Até 2020, proibir certas formas de subsídios à pesca, que contribuem para a sobrecapacidade e a sobrepesca, e eliminar os subsídios que contribuam para a pesca ilegal, não reportada e não regulamentada, e abster-se de introduzir novos subsídios como estes, reconhecendo que o tratamento especial e diferenciado adequado e eficaz para os países em desenvolvimento e os países de menor desenvolvimento relativo deve ser parte integrante da negociação sobre subsídios à pesca da Organização Mundial do Comércio
+                        </p>
+                        <p class="roboto-regular">
+                            <span class="meta-num">14.7</span> Até 2030, aumentar os benefícios econômicos para os pequenos Estados insulares em desenvolvimento e os países de menor desenvolvimento relativo, a partir do uso sustentável dos recursos marinhos, inclusive por meio de uma gestão sustentável da pesca, aquicultura e turismo
+                        </p>
+                        <p class="roboto-regular">
+                            <span class="meta-num">14.a</span> Aumentar o conhecimento científico, desenvolver capacidades de pesquisa e transferir tecnologia marinha, tendo em conta os critérios e orientações sobre a Transferência de Tecnologia Marinha da Comissão Oceanográfica Intergovernamental, a fim de melhorar a saúde dos oceanos e aumentar a contribuição da biodiversidade marinha para o desenvolvimento dos países em desenvolvimento, em particular os pequenos Estados insulares em desenvolvimento e os países de menor desenvolvimento relativo
+                        </p>
+                        <p class="roboto-regular">
+                            <span class="meta-num">14.b</span> Proporcionar o acesso dos pescadores artesanais de pequena escala aos recursos marinhos e mercados
+                        </p>
+                        <p class="roboto-regular">
+                            <span class="meta-num">14.c</span> Assegurar a conservação e o uso sustentável dos oceanos e seus recursos pela implementação do direito internacional, como refletido na Convenção das Nações Unidas sobre o Direito do Mar,, que provê o arcabouço legal para a conservação e utilização sustentável dos oceanos e dos seus recursos, conforme registrado no parágrafo 158 do “Futuro Que Queremos”
+                        </p>
+                    </div>
+                    <div class="grow-button-container">
+                        <i class="fa-solid fa-chevron-down growbutton"></i>
+                    </div>
+                </div>
+                <div id="imagens-metas">
+                    <div>
+                        <img src="images/mar-poluido.jpg" alt="">
+                        <div class="row">
+                            <h4 class="roboto-regular">Direitos autorais: © Michael Pitts</h4>
+                            <h4 class="roboto-regular">Veja mais em: 
+                                <a href="https://revistaplaneta.com.br/mar-de-plastico-2/" target="_blank">revista planeta</a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="mobile-hide">
+                        <div>
+                            <img src="images/mar-poluido.jpg" alt="">
+                        </div>
+                        <div class="grow grow-imagens-metas">
+                            <div>
+                                <img src="images/mar-poluido.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="images/mar-poluido.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>      
             </section>
-            <section>
-                <h1 class="roboto-medium" id="videotitle">IBGE EXPLICA</h1>
-                <div class="video">
-                    <iframe src="https://www.youtube.com/embed/-Qy6HtE0GZU?si=xHZictkA1ReZ1Osz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <section class="backgroundfixed" id="background-oceano">
+        </section>
+        <div class="container row">
+            <section class="row video-ods">
+                <div class="video-container">
+                    <h1 class="roboto-medium" id="videotitle">IBGE EXPLICA</h1>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/-Qy6HtE0GZU?si=xHZictkA1ReZ1Osz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="ods">
+                    <a href="https://sc.movimentoods.org.br/" target="_blank">
+                        <img src="images/ods.png" alt="Descrição da Imagem">
+                    </a>
                 </div>
             </section>
-            <section class="ods">
-                <h1 class="roboto-medium">CONHEÇA TODAS AS ODS</h1>
-                <a href="https://sc.movimentoods.org.br/" target="_blank">
-                    <img src="images/ods.png" alt="Descrição da Imagem">
-                </a>
-            </section>
-        </main>
-        <footer class="roboto-regular">
-            <h3>© Gabriel Reis Franzen</h3>
-            <h4>Sistemas Para Internet 2023</h4>
-        </footer>
-    </div>
+        </div>
+            
+    </main>
+    
+    <footer class="roboto-regular">
+        <h3>© Gabriel Reis Franzen</h3>
+        <h4>Sistemas Para Internet 2023</h4>
+    </footer>
+    <!-- JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/expand.js"></script>
 </body>
 </html>

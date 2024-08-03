@@ -23,7 +23,7 @@ header{
 header section{
     margin: auto;
     max-width: 900px;
-    padding: 40px;
+    padding: 60px;
     box-sizing: border-box;
 }
 header #odslogo{
@@ -80,12 +80,9 @@ header section h1{
 
 /* CONTEÚDO */
 
-main{
-    background-color: var(--secondary-color);
-}
 .container{
     margin: auto;
-    max-width: 950px;
+    max-width: 1400px;
     padding: 10px 0px;
 }
 section{
@@ -115,27 +112,36 @@ section{
 }
 
 
-/* IMAGEM POLUIÇÃO */
 
-#imagem-poluida{
-    margin: auto;
-    padding: 20px;
-}
-#imagem-poluida img{
-    border-radius: 8px;
+
+/* BACKGROUND-FIXED */
+.backgroundfixed{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    font-size: 40px;
+
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
 }
-#imagem-poluida h4{
-    margin: 6px;
+.backgroundfixed h1{
+    z-index: 1000;
+    color: white;
 }
-#imagem-poluida a{
-    text-decoration: none;
-    color: var(--primary-color);
+#tartaruga-img{
+    background-image: url(../images/tartaruga.jpg);
 }
-#imagem-poluida a:hover{
-    color: blue;
-    text-decoration: underline;
+#background-oceano{
+    background-image: url(../images/oceano.jpg);
 }
+
+
+
+
 
 /* VÍDEO */
 
@@ -145,28 +151,28 @@ section{
     font-size: 40px;
 }
 .video{
-    padding: 26px 0px;
+    padding: 26px 30px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 900px;
+    margin: auto;
 }
 .video iframe{
     width: 100%;
     aspect-ratio: 16/9;
-    border: 2px solid var(--primary-color);
+    border: 1px solid gray;
     border-radius: 12px;
     transition: all 0.4s;
 }
 .video iframe:hover{
-    border: 2px solid rgb(4, 0, 255);
-    transform: scale(1.005);
+    transform: scale(1.03);
 }
 
 
 
 /* METAS */
-
 #metas h1{
     margin-bottom: 30px;
     text-align: center;
@@ -177,11 +183,17 @@ section{
     border: 1px solid gray;
     border-bottom: 0;
 }
-#metas p:first-of-type{
+#metas > div > p:first-of-type{
     border-radius: 8px 8px 0px 0px;
 }
-#metas p:last-of-type{
-    border-bottom: 1px solid gray;
+#metas > div > p:last-of-type{
+    border-bottom: 1px solid gray !important;
+}
+.grow p:first-child{
+    border-top: 0 !important;
+}
+.grow p:last-of-type{
+    border-bottom: 1px solid gray !important;
     border-radius: 0px 0px 8px 8px;
 }
 .meta-num {
@@ -189,20 +201,81 @@ section{
     font-size: 20px;
     color: var(--primary-color);
 }
+.grow-button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    font-size: 50px;
+}
+
+.growbutton{
+    color: var(--primary-color);
+    transition: all 0.5s;
+}
+.growbutton:hover{
+    cursor: pointer;
+    color: blue;
+}
+.growbutton:active{
+    transform: scale(1.4); 
+    cursor:cell;
+}
+.rotated {
+    transform: rotate(180deg);
+}
+
+
+
+
+/* IMAGEM METAS */
+
+.mobile-hide{
+    display: none;
+}
+#imagens-metas{
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+#imagens-metas > div, .grow-imagens-metas > div{
+    margin: 15px 0px;
+}
+.mobile-hide > div{
+    margin: 15px 0px !important;
+}
+#imagens-metas img{
+    border-radius: 8px;
+    width: 100%;
+}
+#imagens-metas h4{
+    margin: 6px;
+}
+#imagens-metas a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+#imagens-metas a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+
 
 
 /* ODS */
-
-.ods h1{
-    text-align: center;
-    margin-bottom: 30px;
+.ods{
+    max-width: 900px;
+    padding: 20px;
+    margin: auto;
 }
 .ods img{
     width: 100%;
     transition: all 0.4s;
 }
 .ods img:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
     cursor: pointer;
 }
 
@@ -211,6 +284,7 @@ section{
 footer{
     text-align: center;
     padding: 50px 15px;
+    background-color: var(--secondary-color);
 }
 footer h3, footer h4{
     margin: 0;
