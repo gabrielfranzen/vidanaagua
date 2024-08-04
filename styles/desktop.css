@@ -53,6 +53,18 @@ header #odslogo{
 }
 
 
+/* CONTAINER */
+.container{
+    margin: auto;
+    max-width: 1350px;
+    padding: 10px 0px;
+}
+
+/* INTRODUÇÃO */
+.introducao p{
+    text-align: justify;
+}
+
 /* METAS */
 #imagens-metas{
     margin: unset;

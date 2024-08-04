@@ -28,9 +28,8 @@ header section{
 }
 header #odslogo{
     margin: auto;
-    width: 40%;
+    width: 100%;
     max-width: 300px;
-    min-width: 240px;
 }
 header #odslogo img{
     width: 100%;
@@ -82,11 +81,17 @@ header section h1{
 
 .container{
     margin: auto;
-    max-width: 1400px;
+    max-width: 70000px;
     padding: 10px 0px;
 }
 section{
     padding: 60px 10px;
+}
+main{
+    background-color: var(--secondary-color);
+}
+body{
+    background-color: var(--secondary-color);
 }
 
 
@@ -135,7 +140,7 @@ section{
     background-image: url(../images/tartaruga.jpg);
 }
 #background-oceano{
-    background-image: url(../images/oceano.jpg);
+    background-image: url(../images/tartarugaplastico.jpg);
 }
 
 

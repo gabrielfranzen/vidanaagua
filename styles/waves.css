@@ -13,7 +13,6 @@ header .wave.wave1{
     z-index: 4;
     opacity: 1;
     animation-delay: 0s;
-    bottom: 0;
 }
 
 header .wave.wave2{
