@@ -81,6 +81,9 @@ header #odslogo{
     justify-content: center;
     align-items: center;
 }
+#metas p{
+    text-align: justify;
+}
 
 
 /* IMAGEM METAS */
