@@ -84,7 +84,6 @@ header section h1{
     margin: auto;
     max-width: 1400px;
     padding: 10px 0px;
-    overflow: hidden;
 }
 section{
     padding: 60px 10px;
@@ -117,16 +116,15 @@ section{
 
 /* BACKGROUND-FIXED */
 .backgroundfixed{
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 250px;
-    font-size: 40px;
 
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
 
 }
 .backgroundfixed h1{
